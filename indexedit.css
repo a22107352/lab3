@@ -1,0 +1,196 @@
+*{
+    font-family: 'Tilt Prism', cursive;
+    box-sizing: border-box; padding: 0; margin: 0;
+  }
+
+
+
+  #primeirodiv {
+       height : 50;
+       width: 100vw;
+       background-color: gray ;
+  }
+  #palavra {
+
+     display : flex;
+     justify-content: center;
+     align-items: center ; 
+     height :100vh;
+     width :100vw;
+     font-size : 2rem;
+
+
+  }
+  #segundodiv{
+   position: relative;
+   width: 100%;
+
+  }
+  #palavra1 {
+    position:absolute;
+    top :0;
+    left : 0;
+    color:gray;
+
+  }
+  .capitais{
+  background-color: gainsboro;
+ display: flex ;
+
+  }
+
+  .capitais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.capitais > div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888 ;
+    margin: 10px;
+}
+
+.capitais img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#palavra2{
+
+    display : flex;
+    justify-content: center;
+    align-items: center ; 
+    height :100vh;
+    width :100vw;
+    font-size : 2rem;
+
+
+}
+#terceirodiv{
+    position: relative;
+
+    width: 100%;
+    height: 1000%;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+  
+  #terceirodiv img {
+    position: absolute;
+    clip: rect(50px, 350px, 250px, 50px);
+    z-index: 0;
+    display :block;
+    
+  }
+  #terceirodiv img:hover {
+    display: none;
+  }
+  #header{
+   
+   position:  sticky ;
+   display:flex;
+   justify-content: space-between;  
+   align-items: center;
+   background-color: black;
+  } 
+  #header h1{
+    color : white
+}
+#header nav a {
+padding: 20px;
+text-decoration:none;
+color :white;
+}
+#header nav a:hover{
+
+background-color: grey;
+font-weight: bold;
+}
+
+header {  grid-area: header;}
+nav {  grid-area: menu;}
+main {  grid-area: main;}
+aside {  grid-area: right;}
+footer {  grid-area: footer;}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  background-color: DodgerBlue;
+
+  grid-template-areas:
+    "header header  header"
+    "menu   main    right"
+    "footer footer  footer";
+
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.grid-container > * {
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 4vw;
+}
+.grid-container header {
+background-color: black;
+
+} 
+.grid-container header p{
+  padding: 60px;
+  color: white;
+  
+  } 
+.grid-container footer {
+  background-color: black;
+  } 
+
+  .grid-container nav {
+  
+
+      background-image:url(imagens/vikingNormal.png);
+      background-size: cover;
+     
+     
+    
+    }
+    .grid-container main{
+  
+
+      background-image:url(imagens/transferir.jpg);
+      background-size: cover;
+      
+    
+    }  
+  .grid-container aside{
+  
+
+    background-image:url(imagens/vikingDrunk.jpg);
+    background-size: cover;
+  
+  }
+
